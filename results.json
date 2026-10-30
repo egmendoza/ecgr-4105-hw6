@@ -1,0 +1,195 @@
+{
+ "p1": {
+  "experiments": [
+   {
+    "experiment": "Baseline",
+    "hidden": "(32, 16)",
+    "activation": "ReLU",
+    "lr": 0.001,
+    "best_epoch": 118,
+    "val_loss": 0.3570021688938141
+   },
+   {
+    "experiment": "More neurons",
+    "hidden": "(64, 32)",
+    "activation": "ReLU",
+    "lr": 0.001,
+    "best_epoch": 67,
+    "val_loss": 0.34067246317863464
+   },
+   {
+    "experiment": "Fewer neurons",
+    "hidden": "(16, 8)",
+    "activation": "ReLU",
+    "lr": 0.001,
+    "best_epoch": 219,
+    "val_loss": 0.36016738414764404
+   },
+   {
+    "experiment": "Higher learning rate",
+    "hidden": "(32, 16)",
+    "activation": "ReLU",
+    "lr": 0.01,
+    "best_epoch": 25,
+    "val_loss": 0.34224870800971985
+   },
+   {
+    "experiment": "Tanh activation",
+    "hidden": "(32, 16)",
+    "activation": "Tanh",
+    "lr": 0.001,
+    "best_epoch": 225,
+    "val_loss": 0.364347904920578
+   }
+  ],
+  "selected": "More neurons",
+  "hidden": [
+   64,
+   32
+  ],
+  "activation": "ReLU",
+  "lr": 0.001,
+  "epochs": 1000,
+  "best_epoch": 67,
+  "n_params": 3009,
+  "nn": {
+   "MSE": 1.7462140867360485,
+   "RMSE": 1.3214439400655815,
+   "R2": 0.6545276845259673
+  },
+  "nn_train_r2": 0.7283166564175267,
+  "linear": {
+   "MSE": 1.7543186873306689,
+   "RMSE": 1.3245069600914405,
+   "R2": 0.6529242642153174
+  },
+  "svr": {
+   "MSE": 1.882868948030499,
+   "RMSE": 1.3721767189507694,
+   "R2": 0.6274917834238176
+  },
+  "svr_kernel": "linear",
+  "svr_val": {
+   "linear": 0.37602702272770666,
+   "rbf": 0.3952073580480404,
+   "poly": 0.4597783080675067
+  }
+ },
+ "p2": {
+  "experiments": [
+   {
+    "experiment": "Baseline",
+    "hidden": "(32, 16)",
+    "activation": "ReLU",
+    "lr": 0.001,
+    "best_epoch": 234,
+    "val_loss": 0.07249146699905396,
+    "val_acc_at_best": 0.9780219793319702
+   },
+   {
+    "experiment": "More neurons",
+    "hidden": "(64, 32)",
+    "activation": "ReLU",
+    "lr": 0.001,
+    "best_epoch": 138,
+    "val_loss": 0.07436534017324448,
+    "val_acc_at_best": 0.9780219793319702
+   },
+   {
+    "experiment": "Fewer neurons",
+    "hidden": "(16, 8)",
+    "activation": "ReLU",
+    "lr": 0.001,
+    "best_epoch": 807,
+    "val_loss": 0.0683523565530777,
+    "val_acc_at_best": 0.9780219793319702
+   },
+   {
+    "experiment": "Higher learning rate",
+    "hidden": "(32, 16)",
+    "activation": "ReLU",
+    "lr": 0.01,
+    "best_epoch": 86,
+    "val_loss": 0.05759323015809059,
+    "val_acc_at_best": 0.9780219793319702
+   },
+   {
+    "experiment": "Tanh activation",
+    "hidden": "(32, 16)",
+    "activation": "Tanh",
+    "lr": 0.001,
+    "best_epoch": 216,
+    "val_loss": 0.09442079067230225,
+    "val_acc_at_best": 0.9670329689979553
+   }
+  ],
+  "selected": "Higher learning rate",
+  "hidden": [
+   32,
+   16
+  ],
+  "activation": "ReLU",
+  "lr": 0.01,
+  "epochs": 1000,
+  "best_epoch": 86,
+  "n_params": 1537,
+  "nn": {
+   "accuracy": 0.9736842105263158,
+   "precision": 1.0,
+   "recall": 0.9285714285714286,
+   "F1": 0.9629629629629629
+  },
+  "nn_train_acc": 0.9956043956043956,
+  "logreg": {
+   "accuracy": 0.9824561403508771,
+   "precision": 1.0,
+   "recall": 0.9523809523809523,
+   "F1": 0.975609756097561
+  },
+  "svm": {
+   "accuracy": 0.9736842105263158,
+   "precision": 1.0,
+   "recall": 0.9285714285714286,
+   "F1": 0.9629629629629629
+  },
+  "svm_kernel": "rbf",
+  "svm_val": {
+   "linear": 0.9560439560439561,
+   "rbf": 0.989010989010989,
+   "poly": 0.9230769230769231,
+   "sigmoid": 0.9560439560439561
+  },
+  "confusion": {
+   "Logistic regression": [
+    [
+     72,
+     0
+    ],
+    [
+     2,
+     40
+    ]
+   ],
+   "SVM": [
+    [
+     72,
+     0
+    ],
+    [
+     3,
+     39
+    ]
+   ],
+   "Neural network": [
+    [
+     72,
+     0
+    ],
+    [
+     3,
+     39
+    ]
+   ]
+  }
+ }
+}
